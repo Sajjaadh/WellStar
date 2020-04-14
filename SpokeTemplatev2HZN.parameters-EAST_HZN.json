@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        
+        "virtualNetworks_Spoke_name": {
+            "value": "VNET-EastUS2-HZN"
+        },
+        
+        "region_location": {
+            "value": "eastus2"
+        },
+        "VNet_addressPrefix": {
+            "value": "10.244.32.0/20"
+        },
+
+        
+        "Standard_subnet_IPaddress": {
+            "value": "10.244.32.0/24"
+        },
+        "Standard_subnet_name": {
+            "value": "default"
+        },
+        "resourceTags": {
+            "value": {
+                "Business Service" : "Infrastructure",
+                "Business Unit" : "IT",
+                "Compliance" : "N/A",
+                "Cost Center" : "N/A",
+                "Environment" : "PROD",
+                "Owner" : "Network Team"
+            } 
+        }
+
+    }
+}
